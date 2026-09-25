@@ -1,4 +1,4 @@
-# ECSP3000 // Dissertation // rktester
+# ECSP3000 // Dissertation // rkbench
 By Elliott Jelbert (ej1g24@soton.ac.uk)
 
 
