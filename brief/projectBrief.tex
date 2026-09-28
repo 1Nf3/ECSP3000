@@ -1,17 +1,17 @@
 \documentclass[12pt, a4paper]{article}
 
-% Essential packages
+
 \usepackage[utf8]{inputenc}
 \usepackage{geometry}
 \usepackage{setspace}
 \usepackage{hyperref}
-\usepackage{enumitem} % For customizing lists
+\usepackage{enumitem} 
 
-% Page margins (Academic standard: 3cm left for binding, 2.5cm others)
+
 \geometry{left=3cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
-\onehalfspacing     % Standard academic spacing
+\onehalfspacing
 
-% Title Information
+
 \title{\textbf{ECSP3000 Project Brief}\\[0.8em] \Large \textit{Designing and Implementing an Automated \& Reproducible Testbed for Linux Rootkit Detectors, Aiming to Identify and Implement a Novel Rootkit Technique}}
 \author{Elliott Jelbert \\ 35949244 - ej1g24@soton.ac.uk \\ Supervisor: Dr. BooJoong Kang}
 
@@ -21,21 +21,23 @@
 
 \section*{1. Project Aims}
 
-Current research into the evaluation of rootkits and rootkit detectors rely on bespoke evaluation methods %
-which cannot be reliably reproduced by third partys. \\ \\ %
+Current research into the evaluation of rootkits and rootkit detectors rely on bespoke evaluation methodologies %
+which cannot be reliably or easily reproduced by independent parties.
+\\ \\ %
+Furthermore, as the Linux kernel gets updated with new features \& security measures, it changes the landscape for these rootkits \& rootkit detectors, creating a need for a consistent way to evaluate them continuously.
+\\ \\ %
 This tool aims to provide developers, researchers and system administrators with an automated and reproducible testbed for rootkits \& rootkit detectors on the modern Linux kernel to aid future development and testing.
-\\ \\ Furthermore the testbed aims to provide greater transparency on what rootkit techniques remain evasive to standard detection tools.
-\\ \\ As an extension, I will use this tool to identify and evaluate current avenues in the modern (7.2) %
-Linux Kernel for rootkit design, finishing with an evaluation using the aforementioned tool of a new rootkit PoC.
+\\ \\ %
+As an extension, I will use this tool to inform design of a novel proof-of-concept rootkit implementation for the modern Linux kernel, completing an evaluation of the PoC using the testbed.
 
 
 \section*{2. Project Objectives}
 This project will have the following aims which will be used to gauge success:
 \begin{enumerate}
     \item To have a testing framework which, upon specifying a set of rootkits \& rootkit detectors, provides timely \& accurate results which can then be reproduced exactly upon rerun.
-z    \item The system will aim to treat rootkits and rootkit detectors as pluggable modules, allowing developers to easily test new rootkit detectors or test against new rootkits.
-    \item (Stretch) To research and develop a rootkit PoC for the modern 7.2 Linux Kernel, following with an evaluation using this testing framework.
-    \item Using a dataset of results produced by the testbed or, if successful, the aforementioned PoC, to evaluate the current status of rootkit detection on the modern Linux Kernel.
+    \item The system will aim to treat rootkits and rootkit detectors as pluggable modules, allowing developers to easily test new rootkit detectors or test against new rootkits.
+    \item If found to be feasible, to research and develop a proof-of-concept rootkit for the modern Linux kernel, following with an evaluation using this testing framework.
+    \item Using a dataset of results produced by the testbed or, if successful, the aforementioned PoC, evaluate the current state of rootkit detection technologies on the modern Linux Kernel.
 \end{enumerate}
 
 \section*{3. Limitations \& Scope}
@@ -43,8 +45,10 @@ z    \item The system will aim to treat rootkits and rootkit detectors as plugga
 In order to scope my project appropriately, here are a list of things that I currently plan on \textbf{not} doing.
 
 \begin{enumerate}
-    \item My testbed and therefore my rootkit research will only be concerned with Kernel Space Rootkits. This excludes user-space, firmware or any other rootkit classes from my research. %I am certain on this one
+    \item My testbed and therefore my rootkit research will only be concerned with kernel-space \& user-space rootkits. This excludes boot-level, hypervisor-based or \\ firmware- and hardware-level rootkits from the testbed's scope. 
     \item Testing rootkits that implement anti-sandbox measures fall out of scope for this project due to the virtualised environment employed by the testing framework.
+    \item "Modern Linux kernel" refers to the 7.x and 6.x series where the exact version(s) is to be determined conditional on software compatibility and time constraints.
+    \item The rootkit detectors that will be researched in this project will be on-host only, excluding memory forensics, hypervisor-based techniques or any hardware based detection methods from being in scope for my testbed.
 \end{enumerate}
 
 % \section*{4. Technical \& Development Approach}
