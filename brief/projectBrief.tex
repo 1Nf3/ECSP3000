@@ -14,7 +14,8 @@
 \onehalfspacing
 
 
-\title{\textbf{ECSP3000 Project Brief}\\[0.8em] \Large \textit{A Reproducible Evaluation of Linux Rootkit Detectors: A Testbed and a Proof-of-Concept Rootkit}}
+\title{\textbf{ECSP3000 Project Brief}\\[0.8em] \Large \textit{A Reproducible Evaluation of Linux Rootkit Detectors: A Testbed and Proof-of-Concept Rootkit} \vspace{-0.5 cm}} 
+
 \author{Elliott Jelbert \qquad ej1g24@soton.ac.uk \qquad Supervisor: Dr. BooJoong Kang}
 \date{}
 
@@ -23,7 +24,10 @@
 
 \begin{document}
 
+
 \maketitle
+
+\vspace{-1cm}
 
 \section*{1. Project Aims}
 
@@ -37,12 +41,13 @@ The core goal for this project is to develop a reproducible \& automated testbed
 \begin{itemize}[nosep, label={\scriptsize$\bullet$}]
     \item The testbed produces \textbf{reproducible} and \textbf{accurate} results in a \textbf{timely} manner.
     \item The testbed must allow developers to easily add new rootkit detectors or rootkits into the system
-    \item As a stretch, design \& implement a proof-of-concept rootkit for the 7.x Linux kernel series, to be used in this testbed.
-    \item To combine the testbed \& a set of modern rootkits to produce an evaluation of the current effectiveness of on-host rootkit detection tools.
+    \item As a stretch, design \& implement a proof-of-concept rootkit for the 7.x Linux kernel series, to be used in my evaluation.
+    \item To combine the testbed \& a set of modern rootkits \& rootkit detectors to produce an evaluation of the current effectiveness of on-host rootkit detection tools on key metrics including detection rate, false positives and false negatives. 
 \end{itemize}
 
 \section*{3. Limitations \& Scope}
-This project aims to investigate on-host rootkit detection techniques only. This excludes memory forensic techniques, hypervisor-based techniques or any other out-of-band method from the scope. Similarly, only kernel-space \& user-space rootkits will be used in testing. Additionally these rootkits must be public \& open-source and not employ any anti-sandboxing measures which may impact results due to the virtualised environment used in testing.
+This project aims to investigate on-host rootkit detection techniques only. An on-host detection tool is any tool that is installed \& ran locally on the potentially infected machine which then reports back to the user the presence of a rootkit on the system.  This excludes memory forensic techniques, hypervisor-based techniques or any other out-of-band method from the scope.
+Similarly, only kernel-space \& user-space rootkits will be used in testing. Additionally these rootkits must be public \& open-source and not employ any anti-sandboxing measures which may impact results due to the virtualised environment used in testing.
 
-
+My research will be for the Linux kernel versions 6.x and above, ensuring my project stays relevant by targeting a modern platform that is currently understudied in regards to rootkit detection.
 \end{document}
