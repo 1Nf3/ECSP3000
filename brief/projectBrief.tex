@@ -29,7 +29,7 @@
 
 Current research into the evaluation of rootkit detectors rely on bespoke evaluation methodologies which cannot be reliably or easily reproduced by independent parties. Furthermore, as the Linux kernel is updated, the mechanisms that rootkits exploit change, as do the techniques used by detectors. This creates a need for a consistent way to evaluate rootkit detector tools continuously as new rootkit techniques are developed and new detection tools are produced.
 
-This project aims to fulfill this need by producing a tool that provides developers and researchers with an automated and reproducible tool for evaluating rootkit detectors \& rootkits. It also aims to conduct an in-depth analysis of the effectiveness of on-host detection techniques on the modern Linux kernel via this testbed and a new modern proof-of-concept rootkit.
+This project aims to fulfill this need by producing a tool that provides developers and researchers with an automated and reproducible tool for evaluating rootkit detectors against rootkits. It also aims to conduct an in-depth analysis of the effectiveness of on-host detection techniques on the modern Linux kernel via this testbed and a modern proof-of-concept rootkit.
 
 \section*{2. Project Objectives}
 The core goal for this project is to develop a reproducible \& automated testbed for linux rootkit detectors, delivering an in depth analysis of the effectiveness of on-host rootkit detectors on the modern Linux kernel.
@@ -37,7 +37,7 @@ The core goal for this project is to develop a reproducible \& automated testbed
 \begin{itemize}[nosep, label={\scriptsize$\bullet$}]
     \item The testbed produces \textbf{reproducible} and \textbf{accurate} results in a \textbf{timely} manner.
     \item The testbed must allow developers to easily add new rootkit detectors or rootkits into the system
-    \item As a stretch, design \& implement a proof-of-concept rootkit for the 7.x Linux kernel series.
+    \item As a stretch, design \& implement a proof-of-concept rootkit for the 7.x Linux kernel series, to be used in this testbed.
     \item To combine the testbed \& a set of modern rootkits to produce an evaluation of the current effectiveness of on-host rootkit detection tools.
 \end{itemize}
 
