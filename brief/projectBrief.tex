@@ -1,41 +1,29 @@
 \documentclass[12pt, a4paper]{article}
-
 \usepackage{geometry}
-\usepackage{setspace}
 \usepackage{enumitem} 
 \usepackage{titlesec}
 
-\titlespacing*{\subsection}{0pt}{0pt}{0pt}
-\titlespacing*{\section}{0pt}{2pt}{2pt}
+\titlespacing*{\subsection}{0pt}{2pt}{2pt}
+\titlespacing*{\section}{0pt}{15pt}{15pt}
 \geometry{left=1cm, right=1cm, top=0cm, bottom=0cm}
-\onehalfspacing
-
-
-\title{\textbf{ECSP3000 Project Brief}\\[0.8em] \Large \textit{A Reproducible Evaluation of Rootkit Detectors via the Implementation of an Automated Testbed \& Proof-of-Concept Rootkit.} \vspace{-0.5 cm}} 
-
-\author{Elliott Jelbert \qquad ej1g24@soton.ac.uk \qquad Supervisor: Dr. BooJoong Kang}
-\date{}
-
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt}
 
+
+\title{\textbf{ECSP3000 Project Brief}\\[1em] \Large \textit{A Reproducible Evaluation of Linux Rootkit Detectors via the Implementation of an Automated Testbed \& Proof-of-Concept Rootkit.}} 
+
+\author{Elliott Jelbert \qquad ej1g24@soton.ac.uk \qquad Supervisor: Dr. BooJoong Kang}
+\date{}
 \begin{document}
-
-
 \maketitle
-
-\vspace{-1cm}
-
 \section*{1. Project Aims}
-
 Current research into the evaluation of rootkit detectors rely on bespoke evaluation methodologies which cannot be reliably or easily reproduced by independent parties. Furthermore, as the Linux kernel is updated, the mechanisms that rootkits exploit change, as do the techniques used by detectors. This creates a need for a consistent way to evaluate rootkit detector tools continuously as new rootkit techniques are developed and new detection tools are produced.
 
 This project aims to fulfill this need by producing a tool that provides developers and researchers with an automated and reproducible tool for evaluating rootkit detectors against rootkits. It also aims to conduct an in-depth analysis of the effectiveness of on-host detection techniques on the modern Linux kernel via this testbed and a modern proof-of-concept rootkit.
-
 \section*{2. Project Objectives}
 The core goal for this project is to develop a reproducible \& automated testbed for linux rootkit detectors, delivering an in depth analysis of the effectiveness of on-host rootkit detectors on the modern Linux kernel.
 \subsection*{Research Goals}
-\begin{itemize}[nosep, label={\scriptsize$\bullet$}]
+\begin{itemize}[noitemsep]
     \item The testbed produces \textbf{reproducible} and \textbf{accurate} results in a \textbf{timely} manner.
     \item The testbed must allow developers to easily add new rootkit detectors or rootkits into the system
     \item As a stretch, design \& implement a proof-of-concept rootkit for the 7.x Linux kernel series, to be used in my evaluation.
