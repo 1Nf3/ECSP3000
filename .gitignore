@@ -4,3 +4,5 @@ brief/*
 meetingNotes/*
 !/meetingNotes/*.tex
 !/meetingNotes/*.pdf
+.venv
+__pycache__/
