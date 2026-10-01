@@ -6,3 +6,4 @@ meetingNotes/*
 !/meetingNotes/*.pdf
 .venv
 __pycache__/
+.DS_Store
