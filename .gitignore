@@ -1,9 +1,13 @@
-brief/*
-!/brief/*.tex
-!/brief/*.pdf
+/portfolio/**
+!/portfolio/**/*.tex
+!/portfolio/**/*.pdf
+
+!/portfolio/**/
+
 meetingNotes/*
 !/meetingNotes/*.tex
 !/meetingNotes/*.pdf
+
 .venv
 __pycache__/
 .DS_Store
