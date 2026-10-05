@@ -10,7 +10,7 @@ meetingNotes/*
 
 progressReport/*
 !/progressReport/bib/
-!/proegressReport/*.tex
+!/progressReport/*.tex
 !/progressReport/*.pdf
 !/progressReport/*.cls
 !/progressReport/bib/ECS.bib
