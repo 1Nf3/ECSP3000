@@ -8,6 +8,17 @@ meetingNotes/*
 !/meetingNotes/*.tex
 !/meetingNotes/*.pdf
 
+progressReport/*
+!/progressReport/bib/
+!/proegressReport/*.tex
+!/progressReport/*.pdf
+!/progressReport/*.cls
+!/progressReport/bib/ECS.bib
+!/progressReport/bib/ecs.bst
+
+
+
+
 .venv
 __pycache__/
 .DS_Store
