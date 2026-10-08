@@ -1,17 +1,17 @@
 %%
-%% This is file `ecsproject.cls',
+%% This is file `ecsprogress.cls',
 %% generated with the docstrip utility.
 %%
 %% The original source files were:
 %%
-%% ecsdocs.dtx  (with options: `project')
+%% ecsdocs.dtx  (with options: `progress')
 %% 
 %% Copyright (C) 2001 by Steve R. Gunn
 %% 
 %% This file is part of the ECSDocs class distribution
 %% 
 \NeedsTeXFormat{LaTeX2e}[1996/12/01]
-\ProvidesClass{ecsproject}
+\ProvidesClass{ecsprogress}
               [2003/25/04 v1.6
    LaTeX document class]
 \def\baseclass{book}
@@ -25,7 +25,7 @@
   \let\@this\@empty
   \if@tempswa \else \PassOptionsToClass{#1}{\baseclass}\fi
 }
-\@checkoptions{12pt}{{10pt}{11pt}{12pt}}
+\@checkoptions{11pt}{{10pt}{11pt}{12pt}}
 \PassOptionsToClass{a4paper}{\baseclass}
 \ProcessOptions\relax
 \LoadClass{\baseclass}
@@ -184,8 +184,8 @@
       {\large \facname \par}
       {\large \deptname \par}
       \vfill
-      {\large A project report submitted for the}
-      {\large award of \par \degreename \par}
+      {\large A progress report submitted for continuation}
+      {\large towards a MEng \par}
       \vfill
       {\normalsize Supervisor: \supname \par}
       {\normalsize Examiner: \examname \par}
@@ -233,7 +233,7 @@
     {\normalsize \FACNAME \par}
     {\normalsize \DEPTNAME \par}
     \bigskip
-    {\normalsize \underline{A project report submitted for the award of \degreename}\par}
+    {\normalsize \underline{A progress report submitted for continuation towards a MEng}\par}
     \bigskip
     {\normalsize\bf \@title \par}
     \medskip
@@ -302,7 +302,7 @@
     \cleardoublepage
 }\end{spacing}
 }
-\newcommand\listsymbolname{List of Symbols}
+\newcommand\listsymbolname{Nomenclature}
 \usepackage{longtable}
 \newcommand\listofsymbols[2]{
 \btypeout{\listsymbolname}
@@ -344,4 +344,4 @@
   \@mainmatterfalse}
 \endinput
 %%
-%% End of file `ecsproject.cls'.
+%% End of file `ecsprogress.cls'.
