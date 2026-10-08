@@ -9,7 +9,7 @@ requires-python = ">=3.13"
 dependencies = []
 
 [project.scripts]
-rkbench = "rkbench:main"
+rkbench = "rkbench.app:main"
 
 [build-system]
 requires = ["uv_build>=0.12.21,<0.13.0"]
