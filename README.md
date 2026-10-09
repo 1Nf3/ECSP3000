@@ -12,3 +12,8 @@ What I'm doing: Building a Automated Reproducible testbed for rootkit detectors 
 
 Only compatible on Linux due to usage of KVM.
 
+---
+
+# Developer Notes
+
+To compile the `progressReport` on my Home Machine use `latexmk -pdf progressReport.pdf`
