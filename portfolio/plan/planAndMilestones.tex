@@ -1,0 +1,96 @@
+\documentclass[11pt, a4paper]{article} % Changed to 11 / 10?
+\usepackage{geometry}
+\usepackage{enumitem} 
+\usepackage{titlesec}
+\usepackage{booktabs}
+\usepackage{tabularx}
+% In your preamble:
+\usepackage{pdfpages}
+
+% Where you want it in the document:
+
+
+\geometry{left=2cm, right=2cm, top=2cm, bottom=2cm}
+\pagenumbering{gobble}
+
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+
+\date{}
+\begin{document}
+\includepdf[pages=-]{PertFinishedV2.pdf}
+
+\noindent{\Large\bfseries ECSP3000 - Plan \& Milestones}\\[10pt]
+{\small Elliott Jelbert \quad ej1g24@soton.ac.uk \quad Supervisor: Dr BooJoong Kang}
+\vspace{15pt}
+% \\ \small Agreed Project Title: A Reproducible Evaluation of Linux Rootkit Detectors via the Implementation of an Automated Testbed \& Proof-of-Concept Rootkit\\[10pt]
+\hrule
+
+\section*{PERT Chart}
+This chart maps out the dependencies of the different tasks \& milestones within my project. The values on the graph use
+an expected time - in days - calculated from the optimistic, most likely and pessimistic time estimates. \\  \\  
+The stretch track will be developed in parallel with the rest of the project starting after initial research is complete. A decision will be made after milestone \textbf{M3} as to if a complete rootkit design will be pursed, contigent on time \& feasibility.
+
+
+\subsection*{Tasks}
+\begin{table}[h]
+  \centering
+  \begin{tabular}{|c|l|c|c|c|c|}
+    \hline
+    \textbf{ID} & \textbf{Task} & \textbf{O} & \textbf{M} & \textbf{P} & \textbf{TE} $= \lceil (O+4M+P)/6 \rceil$ \\
+    \hline
+    A & Research \& Background       & 10 & 15 & 26 & 16 \\
+    \hline
+    B & Preliminary Experimentation         & 5  & 8  & 17 & 9  \\
+    \hline
+    C & Requirements of Testbed       & 7  & 14 & 27 & 15 \\
+    \hline
+    D & Design of Testbed      & 20 & 30 & 46 & 31 \\
+    \hline
+    E & Rootkit Testbed Integration           & 10 & 14 & 24 & 15 \\
+    \hline
+    F & Rootkit Detector Testbed Integration             & 20 & 28 & 42 & 29 \\
+    \hline
+    G & Testing \& Validation of Testbed & 3 & 5 & 13 & 6 \\
+    \hline
+    H & Research Phase 2 - Rootkit Design & 3 & 5 & 13 & 6 \\
+    \hline
+    I & 6.x Linux Experiment Run & 3 & 5 & 13 & 6 \\
+    \hline
+    J & 6.x Rootkits Ported \& Validated on 7.x & 3 & 5 & 13 & 6 \\
+    \hline
+    K & Rootkit Implementation & 3 & 5 & 13 & 6 \\
+    \hline
+    L & Experiment \& Evaluation of Rootkit & 3 & 5 & 13 & 6 \\
+    \hline
+    M & 7.x Linux Experiment Run & 3 & 5 & 13 & 6 \\
+    \hline
+    N & Results \& Report Writeup & 3 & 5 & 13 & 6 \\
+    \hline
+    \multicolumn{5}{|r|}{\textbf{Total}} & \textbf{121} \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\subsection*{Milestones}
+
+These are the milestones I have defined as the major points of progress within my project.
+\begin{table}[h]
+  \centering
+  \begin{tabular}{|c|p{6cm}|p{6cm}|c|}
+    \hline
+    \textbf{ID} & \textbf{Name} & \textbf{Description} & \textbf{Est. Completed} \\
+    \hline
+    M1 & Research \& Feasibility Completed  & Finished background research \& completed some initial experimentation. & Early-Nov 2026 \\
+    \hline
+    M2 & Testbed \& Integration Complete & Testbed design completed \& detectors/rootkits integrated. & Mid-Dec 2026 \\
+    \hline
+    M3 & 6.x Experiment Data Analysed & Collected \& analysed data from the 6.x experiment run. & Mid-Jan 2027 \\
+    \hline
+    M4 & 7.x Experiment Data Analysed & Collected \& analysed data from the 7.x experiment run. & Mid-Feb 2027 \\
+    \hline
+    M5 & Rootkit Designed \& Evaluated \textbf{(Stretch)} & Rootkit has been designed, developed and used to evaluate relevant rootkit detectors using the testbed. & Mid-March 2027 \\
+    \hline
+  \end{tabular}
+\end{table}
+\end{document}
